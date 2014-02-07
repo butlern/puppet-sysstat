@@ -7,7 +7,7 @@ class sysstat::config {
   # Ensure cron files exist in case some other resource is managing those
   # directories with purge => true.
   file { $::sysstat::sa1_cronfile: }
-  file { $::sysstat::sa2_cronfile: }
+  file { $::sysstat::sa2_cronfile: mode => '0755' }
 
   # Configs
   file_line { "${::sysstat::defaults}-enable" :
