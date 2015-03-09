@@ -1,6 +1,6 @@
 {
   "name": "chartbeat-sysstat",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "author": "chartbeat",
   "summary": "Module to manage sysstat",
   "license": "MIT",
@@ -9,6 +9,9 @@
   "issues_url": "https://github.com/chartbeat-labs/puppet-sysstat/issues",
   "description": "Sysstat module for Puppet",
   "dependencies": [
-    {"name":"puppetlabs/stdlib","version_requirement":">= 3.0.0"}
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 3.0.0"
+    }
   ]
 }
